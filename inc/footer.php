@@ -11,7 +11,17 @@
             <li><a href="#">Privacy</a></li>
         </ul>
     </div>
-    <p>&copy; Copyright Technology Tech.</p>
+    <?php
+    $query_copy = "SELECT * FROM tbl_footer WHERE id ='1'";
+    $select_copy = $db->select($query_copy);
+    if ($select){
+    while ($result_copy = $select_copy->fetch_assoc()){
+
+    ?>
+
+    <p>&copy; <?php echo $result_copy['note']; ?> <?php echo date('Y'); ?></p>
+
+    <?php } } ?>
 </div>
 <?php
 $querySocial = "SELECT * FROM tbl_social WHERE id = '1'";

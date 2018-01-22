@@ -28,7 +28,7 @@
       <file leaf-file-name="titleslogan.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/titleslogan.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1887">
+            <state relative-caret-position="1853">
               <caret line="111" column="18" lean-forward="false" selection-start-line="111" selection-start-column="18" selection-end-line="111" selection-end-column="18" />
               <folding>
                 <marker date="1516482046350" expanded="true" signature="2100:2141" ph="SELECT * FRO... title_slogan" />
@@ -73,10 +73,24 @@
       <file leaf-file-name="footer.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/inc/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="223">
+              <caret line="21" column="72" lean-forward="false" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
               <folding>
-                <marker date="1516489150762" expanded="true" signature="375:414" ph="SELECT * FRO... tbl_social" />
+                <marker date="1516651991676" expanded="true" signature="330:368" ph="SELECT * FRO... tbl_footer" />
+                <marker date="1516651991676" expanded="true" signature="625:664" ph="SELECT * FRO... tbl_social" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="copyright.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/copyright.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="37" column="18" lean-forward="false" selection-start-line="37" selection-start-column="18" selection-end-line="43" selection-end-column="20" />
+              <folding>
+                <marker date="1516651350199" expanded="true" signature="564:674" ph="UPDATE tbl_f... " />
+                <marker date="1516651350199" expanded="true" signature="1163:1201" ph="SELECT * FRO... tbl_footer" />
               </folding>
             </state>
           </provider>
@@ -105,8 +119,8 @@
       <file leaf-file-name="social.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/social.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="29" lean-forward="false" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+            <state relative-caret-position="546">
+              <caret line="42" column="21" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="42" selection-end-column="21" />
               <folding>
                 <marker date="1516487896434" expanded="true" signature="1028:1230" ph="UPDATE tbl_s... " />
                 <marker date="1516487896434" expanded="true" signature="1818:1857" ph="SELECT * FRO... tbl_social" />
@@ -129,7 +143,6 @@
         <option value="$PROJECT_DIR$/admin/index.php" />
         <option value="$PROJECT_DIR$/admin/inc/sidebar.php" />
         <option value="$PROJECT_DIR$/admin/changepassword.php" />
-        <option value="$PROJECT_DIR$/admin/copyright.php" />
         <option value="$PROJECT_DIR$/admin/inbox.php" />
         <option value="$PROJECT_DIR$/helpers/Format.php" />
         <option value="$PROJECT_DIR$/admin/css/layout.css" />
@@ -154,6 +167,7 @@
         <option value="$PROJECT_DIR$/admin/login.php" />
         <option value="$PROJECT_DIR$/admin/social.php" />
         <option value="$PROJECT_DIR$/inc/header.php" />
+        <option value="$PROJECT_DIR$/admin/copyright.php" />
         <option value="$PROJECT_DIR$/inc/footer.php" />
       </list>
     </option>
@@ -342,16 +356,16 @@
       <workItem from="1516258730279" duration="23346000" />
       <workItem from="1516373113494" duration="14861000" />
       <workItem from="1516476988474" duration="9768000" />
-      <workItem from="1516647377358" duration="76000" />
+      <workItem from="1516647377358" duration="2542000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105303000" />
+    <option name="totallyTimeSpent" value="107769000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -502,7 +516,8 @@
         <state relative-caret-position="374">
           <caret line="22" column="4" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
           <folding>
-            <marker date="1516489150762" expanded="true" signature="375:414" ph="SELECT * FRO... tbl_social" />
+            <marker date="1516651991676" expanded="true" signature="330:368" ph="SELECT * FRO... tbl_footer" />
+            <marker date="1516651991676" expanded="true" signature="625:664" ph="SELECT * FRO... tbl_social" />
           </folding>
         </state>
       </provider>
@@ -578,14 +593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="478">
           <caret line="39" column="34" lean-forward="false" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/copyright.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -813,30 +820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/titleslogan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1887">
-          <caret line="111" column="18" lean-forward="false" selection-start-line="111" selection-start-column="18" selection-end-line="111" selection-end-column="18" />
-          <folding>
-            <marker date="1516482046350" expanded="true" signature="2100:2141" ph="SELECT * FRO... title_slogan" />
-            <marker date="1516482046350" expanded="true" signature="2674:2875" ph="UPDATE title... " />
-            <marker date="1516482046350" expanded="true" signature="3438:3592" ph="UPDATE title... " />
-            <marker date="1516482046350" expanded="true" signature="4159:4200" ph="SELECT * FRO... title_slogan" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/social.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="29" lean-forward="false" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
-          <folding>
-            <marker date="1516487896434" expanded="true" signature="1028:1230" ph="UPDATE tbl_s... " />
-            <marker date="1516487896434" expanded="true" signature="1818:1857" ph="SELECT * FRO... tbl_social" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inc/sidebar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -861,12 +844,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/titleslogan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1853">
+          <caret line="111" column="18" lean-forward="false" selection-start-line="111" selection-start-column="18" selection-end-line="111" selection-end-column="18" />
+          <folding>
+            <marker date="1516482046350" expanded="true" signature="2100:2141" ph="SELECT * FRO... title_slogan" />
+            <marker date="1516482046350" expanded="true" signature="2674:2875" ph="UPDATE title... " />
+            <marker date="1516482046350" expanded="true" signature="3438:3592" ph="UPDATE title... " />
+            <marker date="1516482046350" expanded="true" signature="4159:4200" ph="SELECT * FRO... title_slogan" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/social.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="42" column="21" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="42" selection-end-column="21" />
+          <folding>
+            <marker date="1516487896434" expanded="true" signature="1028:1230" ph="UPDATE tbl_s... " />
+            <marker date="1516487896434" expanded="true" signature="1818:1857" ph="SELECT * FRO... tbl_social" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/copyright.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="37" column="18" lean-forward="false" selection-start-line="37" selection-start-column="18" selection-end-line="43" selection-end-column="20" />
+          <folding>
+            <marker date="1516651350199" expanded="true" signature="564:674" ph="UPDATE tbl_f... " />
+            <marker date="1516651350199" expanded="true" signature="1163:1201" ph="SELECT * FRO... tbl_footer" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/inc/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="223">
+          <caret line="21" column="72" lean-forward="false" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
           <folding>
-            <marker date="1516489150762" expanded="true" signature="375:414" ph="SELECT * FRO... tbl_social" />
+            <marker date="1516651991676" expanded="true" signature="330:368" ph="SELECT * FRO... tbl_footer" />
+            <marker date="1516651991676" expanded="true" signature="625:664" ph="SELECT * FRO... tbl_social" />
           </folding>
         </state>
       </provider>
