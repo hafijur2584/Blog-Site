@@ -22,7 +22,7 @@
         <h2>Latest articles</h2>
 
         <?php
-        $query ="SELECT * FROM tbl_post ORDER BY id DESC LIMIT 5";
+        $query ="SELECT * FROM tbl_post ORDER BY id DESC LIMIT 4";
         $post = $db->select($query);
         if ($post){
         while ($result = $post->fetch_assoc()){
@@ -31,7 +31,7 @@
         <div class="popular clear">
             <h3><a href="post.php?id=<?php echo $result['id']; ?>"><?php echo $result['title']; ?></a></h3>
             <a href="post.php?id=<?php echo $result['id']; ?>"><img src="admin/<?php echo $result['image']?>" alt="post image"/></a>
-            <?php echo $fm->textShortlen($result['body'],75); ?>
+            <?php echo $fm->textShortlen($result['body'],90); ?>
         </div>
 
 

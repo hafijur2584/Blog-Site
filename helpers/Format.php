@@ -22,6 +22,17 @@
             return $data;
         }
 
+        public function title(){
+            $path = $_SERVER['SCRIPT_FILENAME'];
+            $title = basename($path,'.php');
+            if ($title == 'index'){
+                $title = 'Home';
+            }elseif ($title == 'contact'){
+                $title = 'Contact';
+            }
+            return $title = ucwords($title);
+        }
+
     }
 
 ?>

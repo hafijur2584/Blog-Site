@@ -30,7 +30,7 @@ if ($select_page){
 
 
 		</div>
-            
+
 </div>
     <?php } }else{
     header("Location: 404.php");
