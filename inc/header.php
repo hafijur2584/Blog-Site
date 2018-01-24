@@ -107,7 +107,17 @@ header("Cache-Control: max-age=2592000");
 <div class="navsection templete">
     <ul>
         <li><a id="active" href="index.php">Home</a></li>
-        <li><a href="about.php">About</a></li>
+        <?php
+
+        $query  = "SELECT * FROM tbl_page";
+        $select_page = $db->select($query);
+        if ($select_page){
+            while ($result = $select_page->fetch_assoc()){
+
+
+                ?>
+                <li><a href="pages.php?pageid=<?php echo $result['id']?>"><?php echo $result['name']?></a> </li>
+            <?php  } } ?>
         <li><a href="contact.php">Contact</a></li>
     </ul>
 </div>
