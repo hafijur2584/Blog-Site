@@ -25,6 +25,7 @@
         public function title(){
             $path = $_SERVER['SCRIPT_FILENAME'];
             $title = basename($path,'.php');
+            $title = str_replace('_',' ',$title);
             if ($title == 'index'){
                 $title = 'Home';
             }elseif ($title == 'contact'){

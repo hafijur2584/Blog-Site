@@ -138,8 +138,19 @@ header("Cache-Control: max-age=2592000");
     </div>
 </div>
 <div class="navsection templete">
+    <?php
+        $path = $_SERVER['SCRIPT_FILENAME'];
+        $current_page = basename($path,'.php');
+    ?>
+
     <ul>
-        <li><a id="active" href="index.php">Home</a></li>
+        <li><a
+             <?php
+                    if ($current_page=='index'){
+                        echo 'id="active"';
+                    }
+             ?>
+                    href="index.php">Home</a></li>
         <?php
 
         $query  = "SELECT * FROM tbl_page";
@@ -149,8 +160,20 @@ header("Cache-Control: max-age=2592000");
 
 
                 ?>
-                <li><a href="pages.php?pageid=<?php echo $result['id']?>"><?php echo $result['name']?></a> </li>
+                <li> <a
+                        <?php
+                        if (isset($_GET['pageid'])&&$_GET['pageid']==$result['id']){
+                            echo 'id="active"';
+                        }
+                        ?>
+                            href="pages.php?pageid=<?php echo $result['id']?>"><?php echo $result['name']?></a> </li>
             <?php  } } ?>
-        <li><a href="contact.php">Contact</a></li>
+        <li><a
+                <?php
+                if ($current_page=='contact_us'){
+                    echo 'id="active"';
+                }
+                ?>
+                    href="contact_us.php">Contact</a></li>
     </ul>
 </div>
