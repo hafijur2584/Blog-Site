@@ -23,7 +23,14 @@
         }elseif (empty($body)){
             $error = "Body must not be empty.";
         } else{
-            $msg = "Ok";
+            $query = "INSERT INTO tbl_contact(firstname,lastname,email,body) VALUES ('$fname','$lname','$email','$body')";
+            $insert = $db->insert($query);
+            if ($insert) {
+                $msg = "Message Sent Successfully..!";
+            }
+            else {
+                $error = "Message not Sent !! Problem Occurs..!";
+            }
         }
     }
 ?>
@@ -36,7 +43,7 @@
                     if (isset($error)){
                         echo "<span class='error'>$error</span>";
                     }if (isset($msg)){
-                    echo "<span class='error'>$msg</span>";
+                    echo "<span style='color: green' class='success'>$msg</span>";
                 }
                 ?>
 

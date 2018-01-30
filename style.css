@@ -236,6 +236,10 @@ margin:200px 0;
   color: red;
   font-size: 20px;
 }
+.success{
+  color: green;
+  font-size: 20px;
+}
 .notfound {
   min-height: 400px;
   padding-top: 100px;
