@@ -29,7 +29,7 @@
 							<td><?php echo $i; ?></td>
 							<td><?php echo $result['firstname']." ".$result['lastname']; ?></td>
 							<td><?php echo $result['email']; ?></td>
-							<td><?php echo $fm->textShortlen($result['body'],50); ?></td>
+							<td><?php echo $fm->textShortlen($result['body'],20); ?></td>
 							<td><?php echo $fm->formatDate($result['date']); ?></td>
 							<td><a href="viewmsg.php?msgId=<?php echo $result['id']; ?>">View</a> ||
                                 <a href="replymsg.php?msgId=<?php  echo $result['id']; ?>">Reply</a> ||
