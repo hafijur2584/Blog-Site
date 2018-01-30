@@ -3,6 +3,22 @@
         <div class="grid_10">
             <div class="box round first grid">
                 <h2>Inbox</h2>
+
+      <?php
+        if (isset($_GET['seenId'])){
+            $seenId = $_GET['seenId'];
+            $query = "UPDATE tbl_contact
+                    SET
+                    status = '1'
+                    WHERE id ='$seenId'";
+            $update_row = $db->update($query);
+            if ($update_row){
+                echo "<span class='success' >Mail Seen Successfully..!</span>";
+            }else{
+                echo "<span class='error' >Mail Not Seen. Problem Occured!</span>";
+            }
+        }
+      ?>
                 <div class="block">        
                     <table class="data display datatable" id="example">
 					<thead>
@@ -33,7 +49,8 @@
 							<td><?php echo $fm->formatDate($result['date']); ?></td>
 							<td><a href="viewmsg.php?msgId=<?php echo $result['id']; ?>">View</a> ||
                                 <a href="replymsg.php?msgId=<?php  echo $result['id']; ?>">Reply</a> ||
-                                <a href="?seenId=<?php echo $result['id']; ?>">Seen</a>
+                                <a onclick="return confirm('Are to sure to Seen!!');" href="?seenId=<?php echo
+                                $result['id']; ?>">Seen</a>
                             </td>
 						</tr>
             <?php } } ?>
@@ -45,6 +62,20 @@
 
             <div class="box round first grid">
                 <h2>Seen Message</h2>
+           <?php
+                if (isset($_GET['delId'])){
+                    $delId = $_GET['delId'];
+
+                    $query = "DELETE FROM tbl_contact WHERE id = '$delId'";
+                    $delete = $db->delete($query);
+                    if ($delete){
+                        echo "<span class='success' >Mail Delete Successfully..!</span>";
+                    }else{
+                        echo "<span class='error' >Mail Not Deleted. Problem Occured!</span>";
+                    }
+                }
+           ?>
+
                 <div class="block">
                     <table class="data display datatable" id="example">
                         <thead>
@@ -59,7 +90,7 @@
                         </thead>
                         <tbody>
                         <?php
-                        $query = "SELECT tbl_post.*,tbl_category.name FROM tbl_post ";
+                        $query = "SELECT * FROM tbl_contact WHERE status = '1' ORDER BY id DESC ";
                         $post = $db->select($query);
                         if ($post){
                             $i =0;
@@ -67,13 +98,13 @@
                                 $i++;
 
                                 ?>
-                                <tr class="odd gradeX">
-                                    <td>01</td>
-                                    <td>name</td>
-                                    <td>email</td>
-                                    <td>message</td>
-                                    <td>date</td>
-                                    <td><a href="">Delete</a></td>
+                                <tr style="text-align: center;" class="odd gradeX">
+                                    <td><?php echo $i; ?></td>
+                                    <td><?php echo $result['firstname']." ".$result['lastname']; ?></td>
+                                    <td><?php echo $result['email']; ?></td>
+                                    <td><?php echo $fm->textShortlen($result['body'],20); ?></td>
+                                    <td><?php echo $fm->formatDate($result['date']); ?></td>
+                                    <td><a onclick="return confirm('Are to sure to delete!!');" href="?delId=<?php echo $result['id']; ?>">Delete</a></td>
                                 </tr>
                             <?php } } ?>
 
