@@ -4,21 +4,7 @@
             <div class="box round first grid">
                 <h2>Inbox</h2>
 
-      <?php
-        if (isset($_GET['seenId'])){
-            $seenId = $_GET['seenId'];
-            $query = "UPDATE tbl_contact
-                    SET
-                    status = '1'
-                    WHERE id ='$seenId'";
-            $update_row = $db->update($query);
-            if ($update_row){
-                echo "<span class='success' >Mail Seen Successfully..!</span>";
-            }else{
-                echo "<span class='error' >Mail Not Seen. Problem Occured!</span>";
-            }
-        }
-      ?>
+
                 <div class="block">        
                     <table class="data display datatable" id="example">
 					<thead>
@@ -48,9 +34,7 @@
 							<td><?php echo $fm->textShortlen($result['body'],20); ?></td>
 							<td><?php echo $fm->formatDate($result['date']); ?></td>
 							<td><a href="viewmsg.php?msgId=<?php echo $result['id']; ?>">View</a> ||
-                                <a href="replymsg.php?msgId=<?php  echo $result['id']; ?>">Reply</a> ||
-                                <a onclick="return confirm('Are to sure to Seen!!');" href="?seenId=<?php echo
-                                $result['id']; ?>">Seen</a>
+                                <a href="replymsg.php?msgId=<?php  echo $result['id']; ?>">Reply</a>
                             </td>
 						</tr>
             <?php } } ?>
@@ -105,7 +89,7 @@
                                     <td><?php echo $fm->textShortlen($result['body'],20); ?></td>
                                     <td><?php echo $fm->formatDate($result['date']); ?></td>
                                     <td>
-                                        <a href="viewmsg.php?msgId=<?php echo $result['id']; ?>">View</a>||
+                                        <a href="viewmsg2.php?msgId=<?php echo $result['id']; ?>">View</a>||
                                         <a onclick="return confirm('Are to sure to delete!!');" href="?delId=<?php echo $result['id']; ?>">Delete</a>
                                     </td>
                                 </tr>

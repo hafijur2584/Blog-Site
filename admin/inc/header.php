@@ -97,7 +97,20 @@ header("Cache-Control: max-age=2592000");
             <li class="ic-dashboard"><a href="index.php"><span>Dashboard</span></a> </li>
             <li class="ic-form-style"><a href=""><span>User Profile</span></a></li>
             <li class="ic-typography"><a href="changepassword.php"><span>Change Password</span></a></li>
-            <li class="ic-grid-tables"><a href="inbox.php"><span>Inbox</span></a></li>
+            <li class="ic-grid-tables"><a href="inbox.php"><span>Inbox
+
+        <?php
+            $query = "SELECT * FROM tbl_contact WHERE status = '0' ORDER BY id DESC ";
+            $msg = $db->select($query);
+            if ($msg){
+                $count = mysqli_num_rows($msg);
+                echo "("."$count".")";
+            }else{
+                echo "("."0".")";
+            }
+        ?>
+
+             </span></a></li>
             <li class="ic-charts"><a href="postlist.php"><span>Visit Website</span></a></li>
         </ul>
     </div>

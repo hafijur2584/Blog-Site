@@ -7,9 +7,15 @@ if (!isset($_GET['msgId']) || $_GET['msgId'] == NULL){
 
 }else{
     $id = $_GET['msgId'];
+    $query = "UPDATE tbl_contact
+                    SET
+                    status = '1'
+                    WHERE id ='$id'";
+    $update_row = $db->update($query);
 }
 
 ?>
+
 
 <div class="grid_10">
     <div class="box round first grid">
