@@ -57,8 +57,21 @@ header("Cache-Control: max-age=2592000");
 
     <meta name="language" content="English">
     <meta name="description" content="It is a website about education">
-    <meta name="keywords" content="blog,cms blog">
-    <meta name="author" content="Delowar">
+    <?php
+        if(isset($_GET['id'])){
+            $keywordId = $_GET['id'];
+            $query  = "SELECT * FROM tbl_post WHERE id = '$keywordId'";
+            $keywords = $db->select($query);
+            if ($keywords){
+                while ($result=$keywords->fetch_assoc()){ ?>
+    <meta name="keywords" content="<?php echo $result['tags']; ?>">
+      <?php          } } }else{ ?>
+    <meta name="keywords" content="<?php echo KEYWORDS; ?>">
+            <?php
+        }
+
+    ?>
+    <meta name="author" content="Hafijur">
     <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.css">
     <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="style.css">

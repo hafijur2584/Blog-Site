@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f3f0b55-fa06-431b-8707-9c439642fadc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/inbox.php" afterPath="$PROJECT_DIR$/admin/inbox.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/inc/header.php" afterPath="$PROJECT_DIR$/admin/inc/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/viewmsg.php" afterPath="$PROJECT_DIR$/admin/viewmsg.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/config.php" afterPath="$PROJECT_DIR$/config/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/header.php" afterPath="$PROJECT_DIR$/inc/header.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,13 +34,28 @@
         </entry>
       </file>
       <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/inc/header.php">
+        <entry file="file://$PROJECT_DIR$/inc/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="108" column="33" lean-forward="false" selection-start-line="108" selection-start-column="33" selection-end-line="108" selection-end-column="33" />
+            <state relative-caret-position="221">
+              <caret line="73" column="42" lean-forward="true" selection-start-line="73" selection-start-column="42" selection-end-line="73" selection-end-column="42" />
               <folding>
-                <marker date="1517408218918" expanded="true" signature="3828:3889" ph="SELECT * FRO... tbl_contact" />
+                <marker date="1517411111093" expanded="true" signature="656:704" ph="SELECT * FRO... tbl_page" />
+                <marker date="1517411111093" expanded="true" signature="1060:1108" ph="SELECT * FRO... tbl_page" />
+                <marker date="1517411111093" expanded="true" signature="1739:1785" ph="SELECT * FRO... tbl_post" />
+                <marker date="1517411111093" expanded="true" signature="3587:3627" ph="SELECT * FRO... title_slogan" />
+                <marker date="1517411111093" expanded="true" signature="4068:4107" ph="SELECT * FRO... tbl_social" />
+                <marker date="1517411111093" expanded="true" signature="5468:5490" ph="SELECT * FRO... tbl_page" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="72" lean-forward="false" selection-start-line="6" selection-start-column="72" selection-end-line="6" selection-end-column="72" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,10 +126,8 @@
         <option value="$PROJECT_DIR$/page.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/pages.php" />
-        <option value="$PROJECT_DIR$/config/config.php" />
         <option value="$PROJECT_DIR$/inc/sidebar.php" />
         <option value="$PROJECT_DIR$/helpers/Format.php" />
-        <option value="$PROJECT_DIR$/inc/header.php" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/contact_us.php" />
         <option value="$PROJECT_DIR$/admin/replymsg.php" />
@@ -124,6 +135,8 @@
         <option value="$PROJECT_DIR$/admin/viewmsg2.php" />
         <option value="$PROJECT_DIR$/admin/viewmsg.php" />
         <option value="$PROJECT_DIR$/admin/inbox.php" />
+        <option value="$PROJECT_DIR$/config/config.php" />
+        <option value="$PROJECT_DIR$/inc/header.php" />
       </list>
     </option>
   </component>
@@ -389,34 +402,34 @@
       <workItem from="1517255212465" duration="80000" />
       <workItem from="1517255319380" duration="5092000" />
       <workItem from="1517310766620" duration="14097000" />
-      <workItem from="1517392735121" duration="2982000" />
+      <workItem from="1517392735121" duration="4466000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151003000" />
+    <option name="totallyTimeSpent" value="152487000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1374" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16178624" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16178624" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,11 +448,12 @@
         <state relative-caret-position="663">
           <caret line="39" column="24" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
           <folding>
-            <marker date="1516900611785" expanded="true" signature="656:704" ph="SELECT * FRO... tbl_page" />
-            <marker date="1516900611785" expanded="true" signature="1060:1108" ph="SELECT * FRO... tbl_page" />
-            <marker date="1516900611785" expanded="true" signature="3152:3192" ph="SELECT * FRO... title_slogan" />
-            <marker date="1516900611785" expanded="true" signature="3633:3672" ph="SELECT * FRO... tbl_social" />
-            <marker date="1516900611785" expanded="true" signature="5033:5055" ph="SELECT * FRO... tbl_page" />
+            <marker date="1517411111093" expanded="true" signature="656:704" ph="SELECT * FRO... tbl_page" />
+            <marker date="1517411111093" expanded="true" signature="1060:1108" ph="SELECT * FRO... tbl_page" />
+            <marker date="1517411111093" expanded="true" signature="1739:1785" ph="SELECT * FRO... tbl_post" />
+            <marker date="1517411111093" expanded="true" signature="3587:3627" ph="SELECT * FRO... title_slogan" />
+            <marker date="1517411111093" expanded="true" signature="4068:4107" ph="SELECT * FRO... tbl_social" />
+            <marker date="1517411111093" expanded="true" signature="5468:5490" ph="SELECT * FRO... tbl_page" />
           </folding>
         </state>
       </provider>
@@ -643,14 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
@@ -756,20 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inc/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2739">
-          <caret line="173" column="4" lean-forward="false" selection-start-line="173" selection-start-column="4" selection-end-line="173" selection-end-column="4" />
-          <folding>
-            <marker date="1516900611785" expanded="true" signature="656:704" ph="SELECT * FRO... tbl_page" />
-            <marker date="1516900611785" expanded="true" signature="1060:1108" ph="SELECT * FRO... tbl_page" />
-            <marker date="1516900611785" expanded="true" signature="3152:3192" ph="SELECT * FRO... title_slogan" />
-            <marker date="1516900611785" expanded="true" signature="3633:3672" ph="SELECT * FRO... tbl_social" />
-            <marker date="1516900611785" expanded="true" signature="5033:5055" ph="SELECT * FRO... tbl_page" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/viewmsg.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -792,6 +784,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/viewmsg2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1498">
+          <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding>
+            <marker date="1517408708194" expanded="true" signature="603:645" ph="SELECT * FRO... tbl_contact" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="72" lean-forward="false" selection-start-line="6" selection-start-column="72" selection-end-line="6" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/inc/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1836">
+          <caret line="108" column="33" lean-forward="false" selection-start-line="108" selection-start-column="33" selection-end-line="108" selection-end-column="33" />
+          <folding>
+            <marker date="1517408218918" expanded="true" signature="3828:3889" ph="SELECT * FRO... tbl_contact" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/inbox.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -805,22 +825,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/viewmsg2.php">
+    <entry file="file://$PROJECT_DIR$/inc/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1498">
-          <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="73" column="42" lean-forward="true" selection-start-line="73" selection-start-column="42" selection-end-line="73" selection-end-column="42" />
           <folding>
-            <marker date="1517408708194" expanded="true" signature="603:645" ph="SELECT * FRO... tbl_contact" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/inc/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="108" column="33" lean-forward="false" selection-start-line="108" selection-start-column="33" selection-end-line="108" selection-end-column="33" />
-          <folding>
-            <marker date="1517408218918" expanded="true" signature="3828:3889" ph="SELECT * FRO... tbl_contact" />
+            <marker date="1517411111093" expanded="true" signature="656:704" ph="SELECT * FRO... tbl_page" />
+            <marker date="1517411111093" expanded="true" signature="1060:1108" ph="SELECT * FRO... tbl_page" />
+            <marker date="1517411111093" expanded="true" signature="1739:1785" ph="SELECT * FRO... tbl_post" />
+            <marker date="1517411111093" expanded="true" signature="3587:3627" ph="SELECT * FRO... title_slogan" />
+            <marker date="1517411111093" expanded="true" signature="4068:4107" ph="SELECT * FRO... tbl_social" />
+            <marker date="1517411111093" expanded="true" signature="5468:5490" ph="SELECT * FRO... tbl_page" />
           </folding>
         </state>
       </provider>
