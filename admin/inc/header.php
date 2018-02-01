@@ -111,7 +111,8 @@ header("Cache-Control: max-age=2592000");
         ?>
 
              </span></a></li>
-            <li class="ic-charts"><a href="postlist.php"><span>Visit Website</span></a></li>
+            <li class="ic-charts"><a href="addUser.php"><span>Add User</span></a></li>
+            <li class="ic-charts"><a href="userList.php"><span>User List</span></a></li>
         </ul>
     </div>
     <div class="clear">
