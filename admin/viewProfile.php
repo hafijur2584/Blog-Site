@@ -1,54 +1,28 @@
 <?php include 'inc/header.php'; ?>
 <?php include 'inc/sidebar.php'; ?>
 <?php
-    $userId = Session::get('userId');
-    $userRole = Session::get('userRole');
+
+if (!isset($_GET['viewid']) || $_GET['viewid'] == NULL){
+    echo "<script>window.location = 'userList.php';</script>";
+    //header("Location: catlist.php");
+}else{
+    $viewId = $_GET['viewid'];
+}
+
 ?>
 
 <div class="grid_10">
     <div class="box round first grid">
-        <h2>User Profile</h2>
+        <h2>View User Profile</h2>
 
         <!--                php code for get data from input field-->
 
-        <?php
 
-        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            $name= $fm->validation($_POST['name']);
-            $username= $fm->validation($_POST['username']);
-            $email= $fm->validation($_POST['email']);
-            //$details= $fm->validation($_POST['details']);
-
-            $name = mysqli_real_escape_string($db->link, $name);
-            $username = mysqli_real_escape_string($db->link, $username);
-            $details = mysqli_real_escape_string($db->link, $_POST['details']);
-            $email = mysqli_real_escape_string($db->link, $email);
-
-                    $query = "UPDATE tbl_user
-                    SET
-                    name = '$name',
-                    username = '$username',
-                    email = '$email',
-                    details = '$details'
-                    WHERE id ='$userId'
-                    ";
-                    $update_row = $db->update($query);
-                    if ($update_row) {
-                        echo "<span class='success' >Successfully Profile Updated..!</span>";
-                    }
-                    else {
-                        echo "<span class='failed' >Profile Not Updated !! Problem Occurs..!</span>";
-                    }
-
-
-
-        }
-        ?>
 
         <div class="block">
             <?php
 
-            $query = "SELECT * FROM tbl_user WHERE id = '$userId' AND role = '$userRole'";
+            $query = "SELECT * FROM tbl_user WHERE id = '$viewId'";
             $getUser = $db->select($query);
             if ($getUser){
 
@@ -67,7 +41,7 @@
                                     <label>Name</label>
                                 </td>
                                 <td>
-                                    <input type="text" name="name" value="<?php echo $result['name']?>" class="medium" />
+                                    <input type="text" readonly name="name" value="<?php echo $result['name']?>" class="medium" />
                                 </td>
                             </tr>
 
@@ -76,7 +50,7 @@
                                     <label>userName</label>
                                 </td>
                                 <td>
-                                    <input type="text" name="username" value="<?php echo $result['username']?>" class="medium" />
+                                    <input type="text" readonly name="username" value="<?php echo $result['username']?>" class="medium" />
                                 </td>
                             </tr>
 
@@ -85,7 +59,7 @@
                                     <label>Email</label>
                                 </td>
                                 <td>
-                                    <input type="text" name="email" value="<?php echo $result['email']?>" class="medium" />
+                                    <input type="text" readonly name="email" value="<?php echo $result['email']?>" class="medium" />
                                 </td>
                             </tr>
 
@@ -94,7 +68,7 @@
                                     <label>Details</label>
                                 </td>
                                 <td>
-                                    <textarea name="details" class="tinymce">
+                                    <textarea readonly name="details" class="tinymce">
 
                                         <?php echo $result['details']?>
 
@@ -107,8 +81,8 @@
                             <tr>
                                 <td></td>
                                 <td>
-                                    <input type="submit" name="submit" Value="Update" />
-                                    <a style="padding: 6px 26px;background: lightgrey;margin-left: 7px;" href="index.php">Ok</a>
+
+                                    <a style="padding: 6px 26px;background: lightgrey;margin-left: 7px;" href="userList.php">Ok</a>
                                 </td>
                             </tr>
                         </table>
