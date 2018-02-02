@@ -42,6 +42,8 @@ $fm = new Format();
                         Session::set('login',true);
                         Session::set('username',$value['username']);
                         Session::set('userId',$value['id']);
+                        Session::set('name',$value['name']);
+                        Session::set('userRole',$value['role']);
                         header("Location: index.php");
                     }else{
                         echo "<span class='error'>No Result found!!</span>";

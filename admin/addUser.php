@@ -19,7 +19,7 @@
                     if (empty($username)||empty($password)||empty($role)){
                         echo "<span class='error' >Field must not be empty..!!</span>";
                     }else{
-                        $query = "INSERT INTO  tbl_user(username,password,email,details,role) VALUES ('$username','$password','','','$role')";
+                        $query = "INSERT INTO  tbl_user(name,username,password,email,details,role) VALUES ('','$username','$password','','','$role')";
                         $userInsert = $db->insert($query);
 
                         if ($userInsert){
