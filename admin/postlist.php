@@ -45,7 +45,17 @@
 							<td><?php echo $result['tags']?></td>
 							<td><?php echo $fm->formatDate($result['date']);  ?> </td>
                             
-							<td><a onclick="return confirm('Are to sure to Edit!!');" href="editpost.php?editid=<?php echo $result['id']; ?>">Edit</a> || <a onclick="return confirm('Are to sure to delete!!');" href="delepost.php?delid=<?php echo $result['id']; ?>">Delete</a></td>
+							<td>
+							    <a href="viewPost.php?viewPost=<?php echo $result['id']; ?>">View</a>
+
+             <?php
+                if (Session::get('userId') == $result['userid'] ||Session::get('userRole')=='1'){
+
+             ?>
+                              ||  <a  href="editpost.php?editid=<?php echo $result['id']; ?>">Edit</a> ||
+                                <a onclick="return confirm('Are to sure to delete!!');" href="delepost.php?delid=<?php echo $result['id']; ?>">Delete</a>
+               <?php } ?>
+                            </td>
 						</tr>
                     <?php } } ?>
 

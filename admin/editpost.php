@@ -27,12 +27,14 @@ if (!isset($_GET['editid']) || $_GET['editid'] == NULL){
             $author = $fm->validation($_POST['author']);
             $tags = $fm->validation($_POST['tags']);
             $cat = $_POST['cat'];
+            $userId = $_POST['userid'];
 
             $title = mysqli_real_escape_string($db->link, $title);
             $cat = mysqli_real_escape_string($db->link, $cat);
             $body = mysqli_real_escape_string($db->link, $_POST['body']);
             $author = mysqli_real_escape_string($db->link, $author);
             $tags = mysqli_real_escape_string($db->link, $tags);
+            $userId = mysqli_real_escape_string($db->link, $userId);
 
 //            code for upload image
 
@@ -78,7 +80,8 @@ if (!isset($_GET['editid']) || $_GET['editid'] == NULL){
                     body = '$body',
                     image = '$uploaded_image',
                     author = '$author',
-                    tags = '$tags'
+                    tags = '$tags',
+                    userid = '$userId'
                     WHERE id ='$postid'
                     ";
                     $update_row = $db->update($query);
@@ -97,7 +100,8 @@ if (!isset($_GET['editid']) || $_GET['editid'] == NULL){
                     title = '$title',
                     body = '$body',
                     author = '$author',
-                    tags = '$tags'
+                    tags = '$tags',
+                    userid = '$userId'
                     WHERE id ='$postid'
                     ";
                 $update_row = $db->update($query);
@@ -207,6 +211,7 @@ if (!isset($_GET['editid']) || $_GET['editid'] == NULL){
                         </td>
                         <td>
                             <input type="text" name="author" value="<?php echo $postResult['author']?>" class="medium" />
+                            <input type="hidden" name="userid" value="<?php echo Session::get('userId'); ?>" class="medium" />
                         </td>
                     </tr>
 

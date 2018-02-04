@@ -67,6 +67,9 @@ $fm = new Format();
 				<input type="submit" value="Log in" />
 			</div>
 		</form><!-- form -->
+        <div class="button">
+            <a href="forgotPass.php">Forgot Password...!</a>
+        </div>
 		<div class="button">
 			<a href="#">Training with live project</a>
 		</div><!-- button -->

@@ -5,12 +5,12 @@
         <h2>Category List</h2>
         <!--                php code for delete category-->
         <?php
-        if (isset($_GET['delcat'])){
-            $delId = $_GET['delcat'];
-            $delQuery = "DELETE FROM tbl_category WHERE id = '$delId' ";
-            $delCat = $db->delete($delQuery);
+        if (isset($_GET['delUser'])){
+            $delId = $_GET['delUser'];
+            $delQuery = "DELETE FROM tbl_user WHERE id = '$delId' ";
+            $delUser = $db->delete($delQuery);
 
-            if ($delCat){
+            if ($delUser){
                 echo "<span class='success' >User Deleted Successfully..!!</span>";
             }else{
                 echo "<span class='error' >User Not Deleted..!!</span>";
@@ -58,7 +58,18 @@
                                     }
                                 ?>
                             </td>
-                            <td><a href="viewProfile.php?viewid=<?php echo $result['id']; ?>">View</a> || <a onclick="return confirm('Are to sure to delete!!');" href="?delcat=<?php echo $result['id']; ?>">Delete</a> </td>
+                            <td>
+                                <a href="viewProfile.php?viewid=<?php echo $result['id']; ?>">View</a>
+                                <?php
+                                if (Session::get('userRole')==1){ ?>
+                                   || <a onclick="return confirm('Are to sure to delete!!');" href="?delUser=<?php echo
+                                    $result['id']; ?>">Delete</a>
+                                <?php   }
+                                ?>
+
+
+
+                            </td>
                         </tr>
                     <?php } } ?>
 

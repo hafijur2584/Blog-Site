@@ -1,5 +1,10 @@
 <?php include 'inc/header.php'; ?>
 <?php include 'inc/sidebar.php'; ?>
+<?php
+    if (Session::get('userRole')!=1){
+        echo "<script>window.location = 'index.php';</script>";
+    }
+?>
     <div class="grid_10">
         <div class="box round first grid">
             <h2>Add New User</h2>
@@ -9,26 +14,43 @@
 
                 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     $username = $fm->validation($_POST['username']);
+                    $email = $fm->validation($_POST['email']);
                     $password = $fm->validation(md5($_POST['password']));
                     $role = $fm->validation($_POST['role']);
 
                     $username = mysqli_real_escape_string($db->link, $username);
+                    $email = mysqli_real_escape_string($db->link, $email);
                     $password = mysqli_real_escape_string($db->link, $password);
                     $role = mysqli_real_escape_string($db->link, $role);
 
                     if (empty($username)||empty($password)||empty($role)){
                         echo "<span class='error' >Field must not be empty..!!</span>";
                     }else{
-                        $query = "INSERT INTO  tbl_user(name,username,password,email,details,role) VALUES ('','$username','$password','','','$role')";
-                        $userInsert = $db->insert($query);
+                        $mailQuery = "SELECT * FROM tbl_user WHERE email = '$email' LIMIT 1";
+                        $usernameQuery = "SELECT * FROM tbl_user WHERE username = '$username' LIMIT 1";
+                        $mailCheck = $db->select($mailQuery);
+                        $usernameCheck = $db->select($usernameQuery);
 
-                        if ($userInsert){
-                            echo "<span class='success' >User Insert Successfully..!!</span>";
-                        }else{
-                            echo "<span class='error' >User Not Inserted..!!</span>";
+                        if ($mailCheck){
+                            echo "<span class='error' >This email already used..!!</span>";
                         }
+                        elseif ($usernameCheck){
+                            echo "<span class='error' >This username already used..!!</span>";
+                        }
+                        else{
+                            $query = "INSERT INTO  tbl_user(name,username,password,email,details,role) VALUES ('','$username','$password','$email','','$role')";
+                            $userInsert = $db->insert($query);
 
+                            if ($userInsert){
+                                echo "<span class='success' >User Insert Successfully..!!</span>";
+                            }else{
+                                echo "<span class='error' >User Not Inserted..!!</span>";
+                            }
+
+                        }
                     }
+
+
                 }
 
                 ?>
@@ -42,6 +64,15 @@
                             </td>
                             <td>
                                 <input type="text" name="username" placeholder="Enter User Name..." class="medium" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="username">Email</label>
+
+                            </td>
+                            <td>
+                                <input type="email" name="email" placeholder="Enter valid email..." class="medium" />
                             </td>
                         </tr>
                         <tr>

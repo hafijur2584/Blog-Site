@@ -40,7 +40,17 @@
 						<tr class="odd gradeX">
 							<td><?php echo $i; ?></td>
 							<td><?php echo $result['name']?></td>
-							<td><a href="editcat.php?catid=<?php echo $result['id']; ?>">Edit</a> || <a onclick="return confirm('Are to sure to delete!!');" href="?delcat=<?php echo $result['id']; ?>">Delete</a> </td>
+							<td>
+                                <?php
+                                if (Session::get('userRole') == '1'){
+
+                                    ?>
+                                <a href="editcat.php?catid=<?php echo $result['id']; ?>">Edit</a>
+                                || <a onclick="return confirm('Are to sure to delete!!');" href="?delcat=<?php echo $result['id']; ?>">Delete</a>
+                              <?php }elseif(Session::get('userRole') == '3'){ ?>
+                                    <a href="editcat.php?catid=<?php echo $result['id']; ?>">Edit</a>
+                           <?php     } ?>
+                            </td>
 						</tr>
                     <?php } } ?>
 

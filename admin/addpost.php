@@ -14,12 +14,14 @@
             $author = $fm->validation($_POST['author']);
             $tags = $fm->validation($_POST['tags']);
             $cat = $_POST['cat'];
+            $userId = $_POST['userid'];
 
             $title = mysqli_real_escape_string($db->link, $title);
             $cat = mysqli_real_escape_string($db->link, $cat);
             $body = mysqli_real_escape_string($db->link, $_POST['body']);
             $author = mysqli_real_escape_string($db->link, $author);
             $tags = mysqli_real_escape_string($db->link, $tags);
+            $userId = mysqli_real_escape_string($db->link, $userId);
 
 //            code for upload image
 
@@ -46,7 +48,8 @@
             else {
 
                 move_uploaded_file($file_tmp, $uploaded_image);
-                $query = "INSERT INTO tbl_post(cat,title,body,image,author,tags) VALUES ('$cat','$title','$body','$uploaded_image','$author','$tags')";
+                $query = "INSERT INTO tbl_post(cat,title,body,image,author,tags,userid) VALUES ('$cat','$title','$body',
+                  '$uploaded_image','$author','$tags','$userId')";
                 $insert = $db->insert($query);
                 if ($insert) {
                     echo "<span class='success' >Successfully Post Uploaded..!</span>";
@@ -124,7 +127,8 @@
                                 <label>Author</label>
                             </td>
                             <td>
-                                <input type="text" name="author" placeholder="Enter Author Name" class="medium" />
+                                <input type="text" name="author" value="<?php echo Session::get('username'); ?>" class="medium" />
+                                <input type="hidden" name="userid" value="<?php echo Session::get('userId'); ?>" class="medium" />
                             </td>
                         </tr>
 

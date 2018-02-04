@@ -81,7 +81,7 @@ header("Cache-Control: max-age=2592000");
                     <img src="img/img-profile.jpg" alt="Profile Pic" /></div>
                 <div class="floatleft marginleft10">
                     <ul class="inline-ul floatleft">
-                        <li>Hello <?php echo Session::get('name'); ?></li>
+                        <li>Hello <?php echo Session::get('username'); ?></li>
                         <li><a href="?action=logout">Logout</a></li>
                     </ul>
                 </div>
@@ -111,7 +111,13 @@ header("Cache-Control: max-age=2592000");
         ?>
 
              </span></a></li>
-            <li class="ic-charts"><a href="addUser.php"><span>Add User</span></a></li>
+
+         <?php
+            if (Session::get('userRole')==1){ ?>
+                <li class="ic-charts"><a href="addUser.php"><span>Add User</span></a></li>
+            <?php   }
+         ?>
+
             <li class="ic-charts"><a href="userList.php"><span>User List</span></a></li>
         </ul>
     </div>
