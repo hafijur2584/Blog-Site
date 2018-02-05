@@ -1,0 +1,145 @@
+
+    /*green*/
+    .headersection {
+        background: green none repeat scroll 0 0;
+        color: #fff;
+    }
+
+    .icon a {
+        background: #38B838 none repeat scroll 0 0;
+        border-radius: 2px;
+        color: #fff;
+        display: block;
+        float: left;
+        font-size: 20px;
+        margin-left: 3px;
+        padding: 5px 10px;
+    }
+
+    .searchbtn input[type="text"] {
+        border: 1px solid #006300;
+        background: #52D252;
+
+    }
+
+    .searchbtn input[type="submit"] {
+        border: 1px solid #065D06;
+    }
+
+    input[type="submit"] {
+        background: #35B535 none repeat scroll 0 0;
+        border: 1px solid #176917;
+
+    }
+
+    .navsection {
+        background: none repeat scroll 0 0 #23A323;
+    }
+
+    .navsection ul li {
+        border-left: 1px solid #47A583;
+        border-right: 1px solid #248260;
+    }
+
+    .samesidebar h2 {
+        background: #2DAD2D none repeat scroll 0 0;
+        border-bottom: 2px solid #027E02;
+    }
+
+    .maincontent {
+        background: #DAF0DA none repeat scroll 0 0;
+        border: 1px solid #006F00;
+    }
+
+    .readmore a {
+        background: #fff none repeat scroll 0 0;
+        border: 1px solid #006F00;
+    }
+
+    .readmore a {
+        background: #fff none repeat scroll 0 0;
+        border: 1px solid #006302;
+        color: #006F0E;
+
+    }
+
+    .sidebar {
+        background: #DAF0DA none repeat scroll 0 0;
+        border: 1px solid #006F00;
+    }
+
+    .samepost img {
+        background: #fff none repeat scroll 0 0;
+        border: 1px solid #006F00;
+    }
+
+    .footersection {
+        height: 90px;
+        background: #008000;
+        text-align: center;
+    }
+
+    .footermenu ul li a {
+        color: #6FDE7D;
+        font-size: 18px;
+        margin-right: 5px;
+    }
+
+    .pagination a {
+        background: #008000 none repeat scroll 0 0;
+        border: 1px solid #004200;
+        color: #BAFFBA;
+    }
+
+    .pagination a:hover {
+        background: #61E161 none repeat scroll 0 0;
+        color: #fff;
+    }
+
+    .searchbtn input[type="submit"]:hover {
+        background: #008000 none repeat scroll 0 0;
+        border: 1px solid #52D252;
+        color: #fff;
+    }
+
+    .samepost h2 a {
+        color: #008000;
+        text-decoration: none;
+    }
+
+    .popular img {
+        border: 1px solid #004200;
+
+    }
+
+    .popular h3 {
+        border-bottom: 1px dashed #004200;
+    }
+
+    .samepost h2, .about h2 {
+        border-bottom: 2px solid #008000;
+        color: #008000;
+    }
+
+    .relatedpost h2 {
+        background: #008000 none repeat scroll 0 0;
+        border-bottom: 2px solid #2AAA2A !important;
+        color: #CAFFCA !important;
+    }
+
+    .samesidebar ul li a:hover {
+        color: #2C2C2C;
+    }
+
+    .samesidebar ul li a {
+        color: #115D11;
+        text-decoration: none;
+    }
+
+    .contentsection {
+        border: 1px solid #005E00;
+    }
+
+    .samesidebar ul li {
+        border-bottom: 1px dashed #044004;
+    }

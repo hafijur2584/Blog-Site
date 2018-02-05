@@ -1,0 +1,137 @@
+
+    /*default*/
+    .headersection {
+        background: #ca932f none repeat scroll 0 0;
+        color: #fff;
+    }
+
+    .icon a {
+        background: #a56e0a none repeat scroll 0 0;
+        border-radius: 2px;
+        color: #fff;
+        display: block;
+        float: left;
+        font-size: 20px;
+        margin-left: 3px;
+        padding: 5px 10px;
+    }
+
+    .searchbtn input[type="text"] {
+        border: 1px solid #A56E0A;
+        background: #FFE07C;
+
+    }
+
+    .searchbtn input[type="submit"] {
+        border: 1px solid #065D06;
+    }
+
+    .searchbtn input[type="submit"] {
+        border: 1px solid #9d6602;
+    }
+
+    .navsection {
+        background: none repeat scroll 0 0 #e6af4b;
+    }
+
+    .navsection ul li {
+        border-left: 1px solid #fdc662;
+        border-right: 1px solid #c18a26;
+    }
+
+    .samesidebar h2 {
+        background: #e6af4b none repeat scroll 0 0;
+        border-bottom: 2px solid #b7801c;
+    }
+
+    .maincontent {
+        background: #fef4e5 none repeat scroll 0 0;
+        border: 1px solid #ded4c5;
+    }
+
+    .readmore a {
+        background: #fff none repeat scroll 0 0;
+        border: 1px solid #b7801c;
+        color: #b7801c;
+    }
+
+    .sidebar {
+        background: #fef4e5 none repeat scroll 0 0;
+        border: 1px solid #ded4c5;
+    }
+
+    .samepost img {
+        background: #fff none repeat scroll 0 0;
+        border: 1px solid #ebb450;
+    }
+
+    .footersection {
+        height: 90px;
+        background: #B7801C;
+        text-align: center;
+    }
+
+    .footermenu ul li a {
+        color: #E6AF4B;
+        font-size: 18px;
+        margin-right: 5px;
+    }
+
+    .pagination a {
+        background: #E6AF4B none repeat scroll 0 0;
+        border: 1px solid #a7700c;
+    }
+
+    .pagination a:hover {
+        background: #be8723 none repeat scroll 0 0;
+        color: #fff;
+    }
+
+    .searchbtn input[type="submit"]:hover {
+        background: #b7801c none repeat scroll 0 0;
+        border: 1px solid #e6af4b;
+        color: #fff;
+    }
+
+    .samepost h2 a {
+        color: #ac7511;
+        text-decoration: none;
+    }
+
+    .popular img {
+        border: 1px solid #f6bf5b;
+
+    }
+
+    .popular h3 {
+        border-bottom: 1px dashed #b7801c;
+    }
+
+    .samepost h2, .about h2 {
+        border-bottom: 2px solid #e0d6c7;
+        color: #ac7511;
+    }
+
+    .relatedpost h2 {
+        background: #e6af4b none repeat scroll 0 0;
+        border-bottom: 2px solid #b7801c !important;
+        color: #000 !important;
+    }
+
+    .samesidebar ul li a {
+        color: #814a00;
+        text-decoration: none;
+    }
+
+    .samesidebar ul li a:hover {
+        color: #2C2C2C;
+    }
+
+    .contentsection {
+        border: 1px solid #ca932f;
+    }
+
+    .samesidebar ul li {
+        border-bottom: 1px dashed #e9c05c;
+    }
+
