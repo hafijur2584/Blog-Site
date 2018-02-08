@@ -31,11 +31,8 @@
                         $mailCheck = $db->select($mailQuery);
                         $usernameCheck = $db->select($usernameQuery);
 
-                        if ($mailCheck){
-                            echo "<span class='error' >This email already used..!!</span>";
-                        }
-                        elseif ($usernameCheck){
-                            echo "<span class='error' >This username already used..!!</span>";
+                        if ($mailCheck||$usernameCheck){
+                            echo "<span class='error' >Username Or Email already used..!!</span><br>";
                         }
                         else{
                             $query = "INSERT INTO  tbl_user(name,username,password,email,details,role) VALUES ('','$username','$password','$email','','$role')";

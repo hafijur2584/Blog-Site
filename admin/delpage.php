@@ -14,12 +14,13 @@ $db = new Database();
 
 ?>
 <?php
+$getid = mysqli_real_escape_string($db->link, $_GET['delid']);
 
-if (!isset($_GET['delid']) || $_GET['delid'] == NULL){
+if (!isset($getid) || $getid == NULL){
     echo "<script>window.location = 'index.php';</script>";
     //header("Location: catlist.php");
 }else{
-    $delid = $_GET['delid'];
+    $delid = $getid;
 
     $del_query = "DELETE FROM tbl_page where id = '$delid'";
     $delData = $db->delete($del_query);

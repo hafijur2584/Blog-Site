@@ -1,12 +1,13 @@
 <?php include 'inc/header.php'; ?>
 <?php include 'inc/sidebar.php'; ?>
 <?php
+$getid = mysqli_real_escape_string($db->link, $_GET['msgId']);
 
-if (!isset($_GET['msgId']) || $_GET['msgId'] == NULL){
+if (!isset($getid) || $getid == NULL){
     echo "<script>window.location = 'inbox.php';</script>";
 
 }else{
-    $id = $_GET['msgId'];
+    $id = $getid;
     $query = "UPDATE tbl_contact
                     SET
                     status = '1'

@@ -1,12 +1,13 @@
 <?php include 'inc/header.php'; ?>
 <?php include 'inc/sidebar.php'; ?>
 <?php
+$getid = mysqli_real_escape_string($db->link, $_GET['viewid']);
 
-if (!isset($_GET['viewid']) || $_GET['viewid'] == NULL){
+if (!isset($getid) || $getid == NULL){
     echo "<script>window.location = 'userList.php';</script>";
     //header("Location: catlist.php");
 }else{
-    $viewId = $_GET['viewid'];
+    $viewId = $getid;
 }
 
 ?>

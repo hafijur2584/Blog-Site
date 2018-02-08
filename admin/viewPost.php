@@ -3,19 +3,20 @@
 
 <!--    start                code for get id from postlist page-->
 <?php
+$getid = mysqli_real_escape_string($db->link, $_GET['viewPost']);
 
-if (!isset($_GET['viewPost']) || $_GET['viewPost'] == NULL){
+if (!isset($getid) || $getid == NULL){
     echo "<script>window.location = 'postlist.php';</script>";
     //header("Location: catlist.php");
 }else{
-    $postid = $_GET['viewPost'];
+    $postid = $getid;
 }
 
 ?>
 <!--    end                code for get id from postlist page-->
 <div class="grid_10">
     <div class="box round first grid">
-        <h2>Edit Post</h2>
+        <h2>View Post</h2>
 
         <!--                php code for get data from input field-->
 

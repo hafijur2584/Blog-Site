@@ -4,11 +4,10 @@
         $fname = $fm->validation($_POST['firstname']);
         $lname = $fm->validation($_POST['lastname']);
         $email = $fm->validation($_POST['email']);
-        $body = $fm->validation($_POST['body']);
         $fname = mysqli_real_escape_string($db->link,$fname);
         $lname = mysqli_real_escape_string($db->link,$lname);
         $email = mysqli_real_escape_string($db->link,$email);
-        $body = mysqli_real_escape_string($db->link,$body);
+        $body = mysqli_real_escape_string($db->link,$_POST['body']);
         $error ="";
         $msg = "";
         if(empty($fname)){

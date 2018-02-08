@@ -1,12 +1,13 @@
 <?php include 'inc/header.php';  ?>
 
 <?php
+$getid = mysqli_real_escape_string($db->link, $_GET['search']);
 
-if (!isset($_GET['search']) || $_GET['search'] == NULL){
+if (!isset($getid) || $getid == NULL){
     echo "<script>window.location = '404.php';</script>";
     //header("Location: 404.php");
 }else{
-    $search = $_GET['search'];
+    $search = $getid;
 }
 
 ?>

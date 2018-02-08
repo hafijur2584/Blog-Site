@@ -1,7 +1,7 @@
 <?php
 
-include '../lib/Session.php';
-Session::checkSession();
+    include '../lib/Session.php';
+    Session::checkSession();
 
 
 ?>

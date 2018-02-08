@@ -2,12 +2,13 @@
 <?php include 'inc/sidebar.php'; ?>
 
 <?php
+$getid = mysqli_real_escape_string($db->link, $_GET['pageid']);
 
-if (!isset($_GET['pageid']) || $_GET['pageid'] == NULL){
+if (!isset($getid) || $getid == NULL){
     echo "<script>window.location = 'addpage.php';</script>";
     //header("Location: catlist.php");
 }else{
-    $pageid = $_GET['pageid'];
+    $pageid = $getid;
 }
 
 ?>

@@ -2,7 +2,7 @@
 <?php include 'inc/sidebar.php'; ?>
 <div class="grid_10">
     <div class="box round first grid">
-        <h2>Category List</h2>
+        <h2>User List</h2>
         <!--                php code for delete category-->
         <?php
         if (isset($_GET['delUser'])){

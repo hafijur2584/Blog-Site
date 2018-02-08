@@ -1,12 +1,13 @@
 <?php include 'inc/header.php'; ?>
 <?php include 'inc/sidebar.php'; ?>
 <?php
+$getid = mysqli_real_escape_string($db->link, $_GET['msgId']);
 
-if (!isset($_GET['msgId']) || $_GET['msgId'] == NULL){
+if (!isset($getid) || $getid == NULL){
     echo "<script>window.location = 'inbox.php';</script>";
 
 }else{
-    $id = $_GET['msgId'];
+    $id = $getid;
 }
 
 ?>
@@ -20,12 +21,11 @@ if (!isset($_GET['msgId']) || $_GET['msgId'] == NULL){
             $to = $fm->validation($_POST['toEmail']);
             $from = $fm->validation($_POST['fromEmail']);
             $subject = $fm->validation($_POST['subject']);
-            $message = $fm->validation($_POST['message']);
 
             $to = mysqli_real_escape_string($db->link, $to);
             $from = mysqli_real_escape_string($db->link, $from);
             $subject = mysqli_real_escape_string($db->link, $subject);
-            $message = mysqli_real_escape_string($db->link, $message);
+            $message = mysqli_real_escape_string($db->link,$_POST['message']);
             $send = mail($to,$subject,$message,$from);
             if ($send){
                 echo "<span class='success' >Successfully Mail Send..!</span>";

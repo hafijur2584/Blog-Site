@@ -3,12 +3,13 @@
 
 <!--    start                code for get id from postlist page-->
 <?php
+$getid = mysqli_real_escape_string($db->link, $_GET['editid']);
 
-if (!isset($_GET['editid']) || $_GET['editid'] == NULL){
+if (!isset($getid) || $getid == NULL){
     echo "<script>window.location = 'postlist.php';</script>";
     //header("Location: catlist.php");
 }else{
-    $postid = $_GET['editid'];
+    $postid = $getid;
 }
 
 ?>
